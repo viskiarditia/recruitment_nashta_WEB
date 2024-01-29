@@ -4,66 +4,35 @@ Feature: Login
 
   Background: Already Page Recruitment NashTa Group
     Given User already open website Recruitment NasTa Group
-    When User Click menu SignIn
 
-  Scenario: TC_001
-#    And User Already Log into Recuitment NasTa Group page
-#    Then User Click Email or Username Field
-#
-#  Scenario: TC_002
-#    And User Already Log into Recuitment NasTa Group page
-#    Then User Click Email or Username Field
-#    Then Input any alphabet (e.g: Abcd)
-#
-#  Scenario: TC_003
-#    And User Already Log into Recuitment NasTa Group page
-#    Then User Click Email or Username Field
-#    Then Input any numeric
-#
-#  Scenario: TC_004
-#    And User Already Log into Recuitment NasTa Group page
-#    Then User Click Email or Username Field
-#    Then Input any special character
-#
-#  Scenario: TC_005
-#    And User Already Log into Recuitment NasTa Group page
-#    Then User Click Password Field
-#
-#  Scenario: TC_006
-#    And User Already Log into Recuitment NasTa Group page
-#    Then User Click Password Field
-#    Then Input any alphabet (e.g: Abcd)
-#
-#  Scenario: TC_007
-#    And User Already Log into Recuitment NasTa Group page
-#    Then User Click Password Field
-#    Then Input any numeric
-#
-#  Scenario:TC_008
-#    And User Already Log into Recuitment NasTa Group page
-#    Then User Click Password Field
-#    Then Input any special character
-#
-#  Scenario: TC_009
-#    And User Already Log into Recuitment NasTa Group page
-#    Then User Click And Input Email or Username & Password with Valid Data
-#    And User Click Sign In Button
-#
-#  Scenario: TC_010
-#    And User Already Log into Recuitment NasTa Group page
-#    Then User Click And Input Email or Username & Password with Invalid Data
-#    And User Click Sign In Button
-#
-#  Scenario: TC_011
-#    And User Already Log into Recuitment NasTa Group page
-#    Then User Click And Input Password
-#    And User Click Sign In Button
-#
-#  Scenario: TC_012
-#    And User Already Log into Recuitment NasTa Group page
-#    Then User Click And Input Email or Username with Valid Data
-#    And User Click Sign In Button
-#
-#  Scenario: TC_013
-#    And User Already Log into Recuitment NasTa Group page
-#    And User Click Sign In Button
+  Scenario: LG_001
+    Then User Click Email or Username Field
+
+  Scenario Outline: LG_002 LG_003 LG_004
+    Then User Click Email or Username Field
+    Then Input any "<Data Test>"
+    Examples:
+      | Data Test |
+      | ABCD      |
+      | 1122      |
+      | )^#$      |
+
+
+  Scenario Outline: LG_005 LG_006 LG_007 LG_008
+    Then User Click Password Field
+    Then Input any "<Data Test>"
+    Examples:
+      | Data Test |
+      | ABCD      |
+      | 1122      |
+      | )^#$      |
+
+
+  Scenario: LG_009
+    Then User Click And Input Email or Username & Password with Valid Data
+    And User Click Sign In Button
+    Then User already on landing page
+
+  Scenario: LG_010, LG_011, LG_012
+    Then User Click And Input Email & Password with Invalid Data
+
