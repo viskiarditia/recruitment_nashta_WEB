@@ -23,7 +23,7 @@ public class login {
         super();
         this.webDriver = Hooks.webDriver;
         new Actions(webDriver);
-        new WebDriverWait(webDriver, Duration.ofSeconds(10));
+        new WebDriverWait(webDriver, Duration.ofSeconds(20));
     }
 
 

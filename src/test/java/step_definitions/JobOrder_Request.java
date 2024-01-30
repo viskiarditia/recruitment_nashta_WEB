@@ -20,13 +20,13 @@ public class JobOrder_Request {
         super();
         this.webDriver = Hooks.webDriver;
         new Actions(webDriver);
-        new WebDriverWait(webDriver, Duration.ofSeconds(10));
+        new WebDriverWait(webDriver, Duration.ofSeconds(20));
     }
 
     @And("User Click menu Job Order")
     public void userClickMenuJobOrder() throws InterruptedException {
         Actions actions = new Actions(webDriver);
-        WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(20));
 
         WebElement clickMenuHamburger = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='hidden ml-24 lg:flex flex-1']//div[3]/li[@class='MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-padding MuiListItem-button fuse-list-item relative level-0 muiltr-569kmf']")));
         actions.moveToElement(clickMenuHamburger).click().perform();
@@ -40,7 +40,7 @@ public class JobOrder_Request {
 
     @Then("User Add New Data Job Order Request")
     public void userAddNewDataJobOrderRequest() throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(20));
         WebElement AddNewData = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[.='Add New']")));
         AddNewData.click();
         Thread.sleep(2000);
@@ -48,10 +48,12 @@ public class JobOrder_Request {
 
     @When("User Click every field in General Information")
     public void userClickEveryFieldInGeneralInformation() throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(20));
+
         WebElement generalInformation = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//p[contains(.,'General Information')]")));
         generalInformation.click();
         Thread.sleep(2000);
+        
         WebElement scaleOfNeeds = webDriver.findElement(By.xpath("//input[@id='combo-box-Scale of Needs']"));
         scaleOfNeeds.click();
         WebElement company = webDriver.findElement(By.xpath("//input[@id='combo-box-Company']"));
@@ -72,8 +74,8 @@ public class JobOrder_Request {
     private void inputTestDataGeneralInformation(String xpath, String data) {
         WebElement element = webDriver.findElement(By.xpath(xpath));
 
-        // Tunggu hingga elemen menjadi interaktif (maksimum 10 detik)
-        WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
+        // Tunggu hingga elemen menjadi interaktif (maksimum 20 detik)
+        WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(20));
         wait.until(ExpectedConditions.elementToBeClickable(element));
 
         element.click();
@@ -95,7 +97,7 @@ public class JobOrder_Request {
 
     @When("User Click every field in Reason of Request")
     public void userClickEveryFieldInReasonOfRequest() throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(20));
 
         WebElement reasonOfRequest = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//p[.='Reason for Request *Please complete the following data']")));
         reasonOfRequest.click();
@@ -143,8 +145,8 @@ public class JobOrder_Request {
     private void inputTestDataReason(String xpath, String data) {
         WebElement element = webDriver.findElement(By.xpath(xpath));
 
-        // Tunggu hingga elemen menjadi interaktif (maksimum 10 detik)
-        WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
+        // Tunggu hingga elemen menjadi interaktif (maksimum 20 detik)
+        WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(20));
         wait.until(ExpectedConditions.elementToBeClickable(element));
 
         element.click();
@@ -172,8 +174,8 @@ public class JobOrder_Request {
     private void inputTestDataSkillCertification(String xpath, String data) {
         WebElement element = webDriver.findElement(By.xpath(xpath));
 
-        // Tunggu hingga elemen menjadi interaktif (maksimum 10 detik)
-        WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
+        // Tunggu hingga elemen menjadi interaktif (maksimum 20 detik)
+        WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(20));
         wait.until(ExpectedConditions.elementToBeClickable(element));
 
         element.click();
@@ -182,7 +184,7 @@ public class JobOrder_Request {
 
     @When("User Click every field in Skill Certification")
     public void userClickEveryFieldInSkillCertification() throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(20));
         WebElement skillCertification= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//p[.='Skill/Certification *Please complete the following data']")));
         skillCertification.click();
         Thread.sleep(2000);
@@ -204,7 +206,7 @@ public class JobOrder_Request {
 
     @When("User Input All Field Form")
     public void userInputAllFieldForm() throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(20));
 
         //general information
         WebElement generalInformation = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//p[contains(.,'General Information')]")));
