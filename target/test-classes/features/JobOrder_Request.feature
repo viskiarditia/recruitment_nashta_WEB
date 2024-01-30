@@ -7,204 +7,30 @@ Feature: JobOrder_Request
     And User Click Sign In Button
     Then User already on landing page
 
-  Scenario: JOR_001
+
+  Scenario Outline: JOR_001 sampai JOR_022
     And User Click menu Job Order
     Then User Add New Data Job Order Request
-#    When User Click every field in General Information
+    When User Click every field in General Information
+    Then Input any Test in every Field General Information "<Data Test>"
+    Examples:
+      | Data Test |
+      | ABCD      |
+      | 1122      |
+      | )^#$      |
 
-#
-#  Scenario: JOR_002
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Scale Of Needs Field
-#    Then Input any alphabet (e.g: Abcd)
-#
-#  Scenario: JOR_003
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Scale Of Needs Field
-#    Then Input any numeric
-#
-#  Scenario: JOR_004
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Scale Of Needs Field
-#    Then Input any special character
-#
-#  Scenario: JOR_005
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Job Required Field
-#    Then Input any alphabet (e.g: Abcd)
-#
-#  Scenario: JOR_006
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Job Required Field
-#    Then Input any numeric
-#
-#  Scenario: JOR_007
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Job Required Field
-#    Then Input any special character
-#
-#  Scenario: JOR_008
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Departement Field
-#    Then Input any alphabet (e.g: Abcd)
-#
-#  Scenario: JOR_009
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Departement Field
-#    Then Input any numeric
-#
-#  Scenario: JOR_010
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Departement Field
-#    Then Input any special character
-#
-#  Scenario: JOR_011
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Amount of Required Personnel Field
-#    Then Input any alphabet (e.g: Abcd)
-#
-#  Scenario: JOR_012
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Amount of Required Personnel Field
-#    Then Input any numeric
-#
-#  Scenario: JOR_013
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Amount of Required Personnel Field
-#    Then Input any special character
-#
-#  Scenario: JOR_014
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Date Needed Field
-#    Then Input any alphabet (e.g: Abcd)
-#
-#  Scenario: JOR_015
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Date Needed Field
-#    Then Input any numeric
-#
-#  Scenario: JOR_016
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Date Needed Field
-#    Then Input any special character
-#
-#  Scenario: JOR_017
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Company Field
-#    Then Input any alphabet (e.g: Abcd)
-#
-#  Scenario: JOR_018
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Company Field
-#    Then Input any numeric
-#
-#  Scenario: JOR_019
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Company Field
-#    Then Input any special character
-#
-#  Scenario: JOR_020
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Assigment Location Field
-#    Then Input any alphabet (e.g: Abcd)
-#
-#  Scenario: JOR_021
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Assigment Location Field
-#    Then Input any numeric
-#
-#  Scenario: JOR_022
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Assigment Location Field
-#    Then Input any special character
-#
-#  Scenario: JOR_023
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Assigment Location Field Age
-#    Then Input any alphabet (e.g: Abcd)
-#
-#  Scenario: JOR_024
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Assigment Location Field Age
-#    Then Input any numeric
-#
-#  Scenario: JOR_025
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Assigment Location Field Age
-#    Then Input any special character
-#
+
+  Scenario Outline: JOR_023 sampai JOR_072
+    And User Click menu Job Order
+    Then User Add New Data Job Order Request
+    When User Click every field in Reason of Request
+    Then Input any Test in every Field Reason of Request "<Data Test>"
+    Examples:
+      | Data Test |
+      | ABCD      |
+      | 1122      |
+      | )^#$      |
+
 #  Scenario: JOR_026
 #    Given User already open webstie Recuitment NasTa Group
 #    When User already logged in

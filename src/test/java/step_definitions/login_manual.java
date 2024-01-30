@@ -45,7 +45,7 @@ public class login_manual {
     }
 
     @Then("Input any {string}")
-    public void inputAny(String Data) {
+    public void inputAny(String Data) throws InterruptedException {
         WebElement dataInput = webDriver.findElement(By.xpath("//input[@name='email']"));
         dataInput.sendKeys(Data);
     }
