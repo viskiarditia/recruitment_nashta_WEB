@@ -48,7 +48,8 @@ public class JobOrder_Request {
 
     @When("User Click every field in General Information")
     public void userClickEveryFieldInGeneralInformation() throws InterruptedException {
-        WebElement generalInformation = webDriver.findElement(By.xpath(".//div[@class='undefined file-details p-24']//div[@class='MuiButtonBase-root MuiAccordionSummary-root MuiAccordionSummary-gutters muiltr-1iji0d4']/div[.='General Information *Please complete the following data']"));
+        WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
+        WebElement generalInformation = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//p[contains(.,'General Information')]")));
         generalInformation.click();
         Thread.sleep(2000);
         WebElement scaleOfNeeds = webDriver.findElement(By.xpath("//input[@id='combo-box-Scale of Needs']"));
@@ -96,7 +97,7 @@ public class JobOrder_Request {
     public void userClickEveryFieldInReasonOfRequest() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
 
-        WebElement reasonOfRequest = webDriver.findElement(By.xpath("//p[.='Reason for Request *Please complete the following data']"));
+        WebElement reasonOfRequest = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//p[.='Reason for Request *Please complete the following data']")));
         reasonOfRequest.click();
         Thread.sleep(2000);
         WebElement procurmentReason = webDriver.findElement(By.xpath("//input[@name='reason_desc']"));
@@ -181,7 +182,8 @@ public class JobOrder_Request {
 
     @When("User Click every field in Skill Certification")
     public void userClickEveryFieldInSkillCertification() throws InterruptedException {
-        WebElement skillCertification= webDriver.findElement(By.xpath("//p[.='Skill/Certification *Please complete the following data']"));
+        WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
+        WebElement skillCertification= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//p[.='Skill/Certification *Please complete the following data']")));
         skillCertification.click();
         Thread.sleep(2000);
 
@@ -205,7 +207,7 @@ public class JobOrder_Request {
         WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
 
         //general information
-        WebElement generalInformation = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//div[@class='undefined file-details p-24']//div[@class='MuiButtonBase-root MuiAccordionSummary-root MuiAccordionSummary-gutters muiltr-1iji0d4']/div[.='General Information *Please complete the following data']")));
+        WebElement generalInformation = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//p[contains(.,'General Information')]")));
         generalInformation.click();
         Thread.sleep(2000);
 

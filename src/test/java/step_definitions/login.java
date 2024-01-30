@@ -13,14 +13,13 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
-import java.util.NoSuchElementException;
 import java.util.Properties;
 
 
-public class login_manual {
+public class login {
 
     private final WebDriver webDriver;
-    public login_manual() {
+    public login() {
         super();
         this.webDriver = Hooks.webDriver;
         new Actions(webDriver);

@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="step_definitions.RunCukesTest" time="322.599" tests="19" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/fizkiarditiakusuma/Documents/Nastha_Group/recruitment_nashta_WEB/target/test-classes:/Users/fizkiarditiakusuma/Documents/Nastha_Group/recruitment_nashta_WEB/target/classes:/Users/fizkiarditiakusuma/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/fizkiarditiakusuma/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-java/4.16.1/selenium-java-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-api/4.16.1/selenium-api-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.16.1/selenium-chrome-driver-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.16.1/selenium-chromium-driver-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-json/4.16.1/selenium-json-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.16.1/selenium-manager-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v118/4.16.1/selenium-devtools-v118-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v119/4.16.1/selenium-devtools-v119-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v120/4.16.1/selenium-devtools-v120-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.16.1/selenium-devtools-v85-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.16.1/selenium-edge-driver-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.16.1/selenium-firefox-driver-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-http/4.16.1/selenium-http-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.16.1/selenium-ie-driver-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.16.1/selenium-remote-driver-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar:/Users/fizkiarditiakusuma/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/fizkiarditiakusuma/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/fizkiarditiakusuma/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/fizkiarditiakusuma/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/Users/fizkiarditiakusuma/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/Users/fizkiarditiakusuma/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/fizkiarditiakusuma/.m2/repository/io/opentelemetry/opentelemetry-api/1.28.0/opentelemetry-api-1.28.0.jar:/Users/fizkiarditiakusuma/.m2/repository/io/opentelemetry/opentelemetry-context/1.28.0/opentelemetry-context-1.28.0.jar:/Users/fizkiarditiakusuma/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.28.0/opentelemetry-exporter-logging-1.28.0.jar:/Users/fizkiarditiakusuma/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.28.0/opentelemetry-sdk-metrics-1.28.0.jar:/Users/fizkiarditiakusuma/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.28.0-alpha/opentelemetry-extension-incubator-1.28.0-alpha.jar:/Users/fizkiarditiakusuma/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.28.0/opentelemetry-sdk-logs-1.28.0.jar:/Users/fizkiarditiakusuma/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.28.0/opentelemetry-sdk-common-1.28.0.jar:/Users/fizkiarditiakusuma/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.28.0/opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar:/Users/fizkiarditiakusuma/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.28.0/opentelemetry-sdk-extension-autoconfigure-1.28.0.jar:/Users/fizkiarditiakusuma/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.28.0-alpha/opentelemetry-api-events-1.28.0-alpha.jar:/Users/fizkiarditiakusuma/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.28.0/opentelemetry-sdk-trace-1.28.0.jar:/Users/fizkiarditiakusuma/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.28.0/opentelemetry-sdk-1.28.0.jar:/Users/fizkiarditiakusuma/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha.jar:/Users/fizkiarditiakusuma/.m2/repository/net/bytebuddy/byte-buddy/1.14.5/byte-buddy-1.14.5.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-os/4.16.1/selenium-os-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.16.1/selenium-safari-driver-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-support/4.16.1/selenium-support-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/io/cucumber/cucumber-java/7.12.1/cucumber-java-7.12.1.jar:/Users/fizkiarditiakusuma/.m2/repository/io/cucumber/cucumber-core/7.12.1/cucumber-core-7.12.1.jar:/Users/fizkiarditiakusuma/.m2/repository/io/cucumber/cucumber-gherkin/7.12.1/cucumber-gherkin-7.12.1.jar:/Users/fizkiarditiakusuma/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.12.1/cucumber-gherkin-messages-7.12.1.jar:/Users/fizkiarditiakusuma/.m2/repository/io/cucumber/gherkin/26.2.0/gherkin-26.2.0.jar:/Users/fizkiarditiakusuma/.m2/repository/io/cucumber/messages/22.0.0/messages-22.0.0.jar:/Users/fizkiarditiakusuma/.m2/repository/io/cucumber/tag-expressions/5.0.1/tag-expressions-5.0.1.jar:/Users/fizkiarditiakusuma/.m2/repository/io/cucumber/cucumber-expressions/16.1.2/cucumber-expressions-16.1.2.jar:/Users/fizkiarditiakusuma/.m2/repository/io/cucumber/datatable/7.12.1/datatable-7.12.1.jar:/Users/fizkiarditiakusuma/.m2/repository/io/cucumber/cucumber-plugin/7.12.1/cucumber-plugin-7.12.1.jar:/Users/fizkiarditiakusuma/.m2/repository/io/cucumber/docstring/7.12.1/docstring-7.12.1.jar:/Users/fizkiarditiakusuma/.m2/repository/io/cucumber/html-formatter/20.3.1/html-formatter-20.3.1.jar:/Users/fizkiarditiakusuma/.m2/repository/io/cucumber/junit-xml-formatter/0.2.0/junit-xml-formatter-0.2.0.jar:/Users/fizkiarditiakusuma/.m2/repository/io/cucumber/ci-environment/9.2.0/ci-environment-9.2.0.jar:/Users/fizkiarditiakusuma/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/fizkiarditiakusuma/.m2/repository/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar:/Users/fizkiarditiakusuma/.m2/repository/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar:/Users/fizkiarditiakusuma/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar:/Users/fizkiarditiakusuma/.m2/repository/io/cucumber/cucumber-junit/7.12.1/cucumber-junit-7.12.1.jar:/Users/fizkiarditiakusuma/.m2/repository/io/github/bonigarcia/webdrivermanager/5.6.3/webdrivermanager-5.6.3.jar:/Users/fizkiarditiakusuma/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/fizkiarditiakusuma/.m2/repository/com/github/docker-java/docker-java/3.3.4/docker-java-3.3.4.jar:/Users/fizkiarditiakusuma/.m2/repository/com/github/docker-java/docker-java-core/3.3.4/docker-java-core-3.3.4.jar:/Users/fizkiarditiakusuma/.m2/repository/com/github/docker-java/docker-java-api/3.3.4/docker-java-api-3.3.4.jar:/Users/fizkiarditiakusuma/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.76/bcpkix-jdk18on-1.76.jar:/Users/fizkiarditiakusuma/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.76/bcprov-jdk18on-1.76.jar:/Users/fizkiarditiakusuma/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.76/bcutil-jdk18on-1.76.jar:/Users/fizkiarditiakusuma/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/fizkiarditiakusuma/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.4/docker-java-transport-httpclient5-3.3.4.jar:/Users/fizkiarditiakusuma/.m2/repository/com/github/docker-java/docker-java-transport/3.3.4/docker-java-transport-3.3.4.jar:/Users/fizkiarditiakusuma/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/Users/fizkiarditiakusuma/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/fizkiarditiakusuma/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/Users/fizkiarditiakusuma/.m2/repository/org/apache/commons/commons-compress/1.25.0/commons-compress-1.25.0.jar:/Users/fizkiarditiakusuma/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/fizkiarditiakusuma/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/fizkiarditiakusuma/.m2/repository/net/masterthought/cucumber-reporting/5.3.1/cucumber-reporting-5.3.1.jar:/Users/fizkiarditiakusuma/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.1/jackson-databind-2.10.1.jar:/Users/fizkiarditiakusuma/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.1/jackson-annotations-2.10.1.jar:/Users/fizkiarditiakusuma/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.1/jackson-core-2.10.1.jar:/Users/fizkiarditiakusuma/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.10.1/jackson-datatype-jsr310-2.10.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/apache/velocity/velocity-engine-core/2.1/velocity-engine-core-2.1.jar:/Users/fizkiarditiakusuma/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/fizkiarditiakusuma/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/fizkiarditiakusuma/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/fizkiarditiakusuma/.m2/repository/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar:/Users/fizkiarditiakusuma/.m2/repository/org/jsoup/jsoup/1.12.1/jsoup-1.12.1.jar:/Users/fizkiarditiakusuma/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20191001.1/owasp-java-html-sanitizer-20191001.1.jar:/Users/fizkiarditiakusuma/.m2/repository/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar:/Users/fizkiarditiakusuma/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/fizkiarditiakusuma/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="ID"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/fizkiarditiakusuma/Documents/Nastha_Group/recruitment_nashta_WEB/target/surefire/surefirebooter-20240130155305736_3.jar /Users/fizkiarditiakusuma/Documents/Nastha_Group/recruitment_nashta_WEB/target/surefire 2024-01-30T15-53-05_684-jvmRun1 surefire-20240130155305736_1tmp surefire_0-20240130155305736_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/fizkiarditiakusuma/Documents/Nastha_Group/recruitment_nashta_WEB/target/test-classes:/Users/fizkiarditiakusuma/Documents/Nastha_Group/recruitment_nashta_WEB/target/classes:/Users/fizkiarditiakusuma/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/fizkiarditiakusuma/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-java/4.16.1/selenium-java-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-api/4.16.1/selenium-api-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.16.1/selenium-chrome-driver-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.16.1/selenium-chromium-driver-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-json/4.16.1/selenium-json-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.16.1/selenium-manager-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v118/4.16.1/selenium-devtools-v118-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v119/4.16.1/selenium-devtools-v119-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v120/4.16.1/selenium-devtools-v120-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.16.1/selenium-devtools-v85-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.16.1/selenium-edge-driver-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.16.1/selenium-firefox-driver-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-http/4.16.1/selenium-http-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.16.1/selenium-ie-driver-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.16.1/selenium-remote-driver-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar:/Users/fizkiarditiakusuma/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/fizkiarditiakusuma/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/fizkiarditiakusuma/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/fizkiarditiakusuma/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/Users/fizkiarditiakusuma/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/Users/fizkiarditiakusuma/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/fizkiarditiakusuma/.m2/repository/io/opentelemetry/opentelemetry-api/1.28.0/opentelemetry-api-1.28.0.jar:/Users/fizkiarditiakusuma/.m2/repository/io/opentelemetry/opentelemetry-context/1.28.0/opentelemetry-context-1.28.0.jar:/Users/fizkiarditiakusuma/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.28.0/opentelemetry-exporter-logging-1.28.0.jar:/Users/fizkiarditiakusuma/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.28.0/opentelemetry-sdk-metrics-1.28.0.jar:/Users/fizkiarditiakusuma/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.28.0-alpha/opentelemetry-extension-incubator-1.28.0-alpha.jar:/Users/fizkiarditiakusuma/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.28.0/opentelemetry-sdk-logs-1.28.0.jar:/Users/fizkiarditiakusuma/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.28.0/opentelemetry-sdk-common-1.28.0.jar:/Users/fizkiarditiakusuma/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.28.0/opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar:/Users/fizkiarditiakusuma/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.28.0/opentelemetry-sdk-extension-autoconfigure-1.28.0.jar:/Users/fizkiarditiakusuma/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.28.0-alpha/opentelemetry-api-events-1.28.0-alpha.jar:/Users/fizkiarditiakusuma/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.28.0/opentelemetry-sdk-trace-1.28.0.jar:/Users/fizkiarditiakusuma/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.28.0/opentelemetry-sdk-1.28.0.jar:/Users/fizkiarditiakusuma/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha.jar:/Users/fizkiarditiakusuma/.m2/repository/net/bytebuddy/byte-buddy/1.14.5/byte-buddy-1.14.5.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-os/4.16.1/selenium-os-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.16.1/selenium-safari-driver-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/seleniumhq/selenium/selenium-support/4.16.1/selenium-support-4.16.1.jar:/Users/fizkiarditiakusuma/.m2/repository/io/cucumber/cucumber-java/7.12.1/cucumber-java-7.12.1.jar:/Users/fizkiarditiakusuma/.m2/repository/io/cucumber/cucumber-core/7.12.1/cucumber-core-7.12.1.jar:/Users/fizkiarditiakusuma/.m2/repository/io/cucumber/cucumber-gherkin/7.12.1/cucumber-gherkin-7.12.1.jar:/Users/fizkiarditiakusuma/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.12.1/cucumber-gherkin-messages-7.12.1.jar:/Users/fizkiarditiakusuma/.m2/repository/io/cucumber/gherkin/26.2.0/gherkin-26.2.0.jar:/Users/fizkiarditiakusuma/.m2/repository/io/cucumber/messages/22.0.0/messages-22.0.0.jar:/Users/fizkiarditiakusuma/.m2/repository/io/cucumber/tag-expressions/5.0.1/tag-expressions-5.0.1.jar:/Users/fizkiarditiakusuma/.m2/repository/io/cucumber/cucumber-expressions/16.1.2/cucumber-expressions-16.1.2.jar:/Users/fizkiarditiakusuma/.m2/repository/io/cucumber/datatable/7.12.1/datatable-7.12.1.jar:/Users/fizkiarditiakusuma/.m2/repository/io/cucumber/cucumber-plugin/7.12.1/cucumber-plugin-7.12.1.jar:/Users/fizkiarditiakusuma/.m2/repository/io/cucumber/docstring/7.12.1/docstring-7.12.1.jar:/Users/fizkiarditiakusuma/.m2/repository/io/cucumber/html-formatter/20.3.1/html-formatter-20.3.1.jar:/Users/fizkiarditiakusuma/.m2/repository/io/cucumber/junit-xml-formatter/0.2.0/junit-xml-formatter-0.2.0.jar:/Users/fizkiarditiakusuma/.m2/repository/io/cucumber/ci-environment/9.2.0/ci-environment-9.2.0.jar:/Users/fizkiarditiakusuma/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/fizkiarditiakusuma/.m2/repository/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar:/Users/fizkiarditiakusuma/.m2/repository/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar:/Users/fizkiarditiakusuma/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar:/Users/fizkiarditiakusuma/.m2/repository/io/cucumber/cucumber-junit/7.12.1/cucumber-junit-7.12.1.jar:/Users/fizkiarditiakusuma/.m2/repository/io/github/bonigarcia/webdrivermanager/5.6.3/webdrivermanager-5.6.3.jar:/Users/fizkiarditiakusuma/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/fizkiarditiakusuma/.m2/repository/com/github/docker-java/docker-java/3.3.4/docker-java-3.3.4.jar:/Users/fizkiarditiakusuma/.m2/repository/com/github/docker-java/docker-java-core/3.3.4/docker-java-core-3.3.4.jar:/Users/fizkiarditiakusuma/.m2/repository/com/github/docker-java/docker-java-api/3.3.4/docker-java-api-3.3.4.jar:/Users/fizkiarditiakusuma/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.76/bcpkix-jdk18on-1.76.jar:/Users/fizkiarditiakusuma/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.76/bcprov-jdk18on-1.76.jar:/Users/fizkiarditiakusuma/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.76/bcutil-jdk18on-1.76.jar:/Users/fizkiarditiakusuma/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/fizkiarditiakusuma/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.4/docker-java-transport-httpclient5-3.3.4.jar:/Users/fizkiarditiakusuma/.m2/repository/com/github/docker-java/docker-java-transport/3.3.4/docker-java-transport-3.3.4.jar:/Users/fizkiarditiakusuma/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/Users/fizkiarditiakusuma/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/fizkiarditiakusuma/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/Users/fizkiarditiakusuma/.m2/repository/org/apache/commons/commons-compress/1.25.0/commons-compress-1.25.0.jar:/Users/fizkiarditiakusuma/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/fizkiarditiakusuma/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/fizkiarditiakusuma/.m2/repository/net/masterthought/cucumber-reporting/5.3.1/cucumber-reporting-5.3.1.jar:/Users/fizkiarditiakusuma/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.1/jackson-databind-2.10.1.jar:/Users/fizkiarditiakusuma/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.1/jackson-annotations-2.10.1.jar:/Users/fizkiarditiakusuma/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.1/jackson-core-2.10.1.jar:/Users/fizkiarditiakusuma/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.10.1/jackson-datatype-jsr310-2.10.1.jar:/Users/fizkiarditiakusuma/.m2/repository/org/apache/velocity/velocity-engine-core/2.1/velocity-engine-core-2.1.jar:/Users/fizkiarditiakusuma/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/fizkiarditiakusuma/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/fizkiarditiakusuma/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/fizkiarditiakusuma/.m2/repository/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar:/Users/fizkiarditiakusuma/.m2/repository/org/jsoup/jsoup/1.12.1/jsoup-1.12.1.jar:/Users/fizkiarditiakusuma/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20191001.1/owasp-java-html-sanitizer-20191001.1.jar:/Users/fizkiarditiakusuma/.m2/repository/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar:/Users/fizkiarditiakusuma/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/fizkiarditiakusuma/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/fizkiarditiakusuma"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-07-18"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/fizkiarditiakusuma/Documents/Nastha_Group/recruitment_nashta_WEB"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/Users/fizkiarditiakusuma/Documents/Nastha_Group/recruitment_nashta_WEB/target/surefire/surefirebooter-20240130155305736_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="17.0.8+7"/>
+    <property name="user.name" value="fizkiarditiakusuma"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="14.2.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.8+7"/>
+    <property name="localRepository" value="/Users/fizkiarditiakusuma/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/nl/kl9228955pjdfy31l8yfjk700000gn/T/"/>
+    <property name="java.version" value="17.0.8"/>
+    <property name="user.dir" value="/Users/fizkiarditiakusuma/Documents/Nastha_Group/recruitment_nashta_WEB"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/fizkiarditiakusuma/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.8+7"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="JOR_001 sampai JOR_022 #1" classname="JobOrder_Request" time="22.762">
+    <system-out><![CDATA[
+@JOR
+Scenario Outline: JOR_001 sampai JOR_022                                 &amp#27;[90m# features//JobOrder_Request.feature:17&amp#27;[0m
+15:53:06.293 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.6.3
+15:53:06.465 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=120 in cache (valid until 16:10:24 30/01/2024 WIB)
+15:53:06.465 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome120=120.0.6099.109 in cache (valid until 09:40:35 31/01/2024 WIB)
+15:53:06.465 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 120.0.6099.109 (resolved driver for Chrome 120)
+15:53:06.475 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 120.0.6099.109 found in cache
+15:53:06.475 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as /Users/fizkiarditiakusuma/.cache/selenium/chromedriver/mac-arm64/120.0.6099.109/chromedriver
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser already open website Recruitment NasTa Group&amp#27;[0m                &amp#27;[90m# step_definitions.login_manual.userAlreadyOpenWebsiteRecruitmentNasTaGroup()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser Click And Input Email or Username & Password with Valid Data&amp#27;[0m &amp#27;[90m# step_definitions.login_manual.userClickAndInputEmailOrUsernamePasswordWithValidData()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Click Sign In Button&amp#27;[0m                                          &amp#27;[90m# step_definitions.login_manual.userClickSignInButton()&amp#27;[0m
+User is on the landing page.
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser already on landing page&amp#27;[0m                                      &amp#27;[90m# step_definitions.login_manual.userAlreadyOnLandingPage()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Click menu Job Order&amp#27;[0m                                          &amp#27;[90m# step_definitions.JobOrder_Request.userClickMenuJobOrder()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser Add New Data Job Order Request&amp#27;[0m                               &amp#27;[90m# step_definitions.JobOrder_Request.userAddNewDataJobOrderRequest()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser Click every field in General Information&amp#27;[0m                     &amp#27;[90m# step_definitions.JobOrder_Request.userClickEveryFieldInGeneralInformation()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mInput any Test in every Field General Information &amp#27;[0m&amp#27;[32m&amp#27;[1m"ABCD"&amp#27;[0m          &amp#27;[90m# step_definitions.JobOrder_Request.inputAnyTestInEveryFieldGeneralInformation(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="JOR_001 sampai JOR_022 #2" classname="JobOrder_Request" time="21.967">
+    <system-out><![CDATA[
+@JOR
+Scenario Outline: JOR_001 sampai JOR_022                                 &amp#27;[90m# features//JobOrder_Request.feature:18&amp#27;[0m
+15:53:28.979 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.6.3
+15:53:28.983 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=120 in cache (valid until 16:10:24 30/01/2024 WIB)
+15:53:28.983 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome120=120.0.6099.109 in cache (valid until 09:40:35 31/01/2024 WIB)
+15:53:28.983 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 120.0.6099.109 (resolved driver for Chrome 120)
+15:53:28.985 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 120.0.6099.109 found in cache
+15:53:28.985 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as /Users/fizkiarditiakusuma/.cache/selenium/chromedriver/mac-arm64/120.0.6099.109/chromedriver
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser already open website Recruitment NasTa Group&amp#27;[0m                &amp#27;[90m# step_definitions.login_manual.userAlreadyOpenWebsiteRecruitmentNasTaGroup()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser Click And Input Email or Username & Password with Valid Data&amp#27;[0m &amp#27;[90m# step_definitions.login_manual.userClickAndInputEmailOrUsernamePasswordWithValidData()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Click Sign In Button&amp#27;[0m                                          &amp#27;[90m# step_definitions.login_manual.userClickSignInButton()&amp#27;[0m
+User is on the landing page.
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser already on landing page&amp#27;[0m                                      &amp#27;[90m# step_definitions.login_manual.userAlreadyOnLandingPage()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Click menu Job Order&amp#27;[0m                                          &amp#27;[90m# step_definitions.JobOrder_Request.userClickMenuJobOrder()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser Add New Data Job Order Request&amp#27;[0m                               &amp#27;[90m# step_definitions.JobOrder_Request.userAddNewDataJobOrderRequest()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser Click every field in General Information&amp#27;[0m                     &amp#27;[90m# step_definitions.JobOrder_Request.userClickEveryFieldInGeneralInformation()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mInput any Test in every Field General Information &amp#27;[0m&amp#27;[32m&amp#27;[1m"1122"&amp#27;[0m          &amp#27;[90m# step_definitions.JobOrder_Request.inputAnyTestInEveryFieldGeneralInformation(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="JOR_001 sampai JOR_022 #3" classname="JobOrder_Request" time="21.797">
+    <system-out><![CDATA[
+@JOR
+Scenario Outline: JOR_001 sampai JOR_022                                 &amp#27;[90m# features//JobOrder_Request.feature:19&amp#27;[0m
+15:53:50.949 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.6.3
+15:53:50.953 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=120 in cache (valid until 16:10:24 30/01/2024 WIB)
+15:53:50.953 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome120=120.0.6099.109 in cache (valid until 09:40:35 31/01/2024 WIB)
+15:53:50.953 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 120.0.6099.109 (resolved driver for Chrome 120)
+15:53:50.957 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 120.0.6099.109 found in cache
+15:53:50.957 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as /Users/fizkiarditiakusuma/.cache/selenium/chromedriver/mac-arm64/120.0.6099.109/chromedriver
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser already open website Recruitment NasTa Group&amp#27;[0m                &amp#27;[90m# step_definitions.login_manual.userAlreadyOpenWebsiteRecruitmentNasTaGroup()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser Click And Input Email or Username & Password with Valid Data&amp#27;[0m &amp#27;[90m# step_definitions.login_manual.userClickAndInputEmailOrUsernamePasswordWithValidData()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Click Sign In Button&amp#27;[0m                                          &amp#27;[90m# step_definitions.login_manual.userClickSignInButton()&amp#27;[0m
+User is on the landing page.
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser already on landing page&amp#27;[0m                                      &amp#27;[90m# step_definitions.login_manual.userAlreadyOnLandingPage()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Click menu Job Order&amp#27;[0m                                          &amp#27;[90m# step_definitions.JobOrder_Request.userClickMenuJobOrder()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser Add New Data Job Order Request&amp#27;[0m                               &amp#27;[90m# step_definitions.JobOrder_Request.userAddNewDataJobOrderRequest()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser Click every field in General Information&amp#27;[0m                     &amp#27;[90m# step_definitions.JobOrder_Request.userClickEveryFieldInGeneralInformation()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mInput any Test in every Field General Information &amp#27;[0m&amp#27;[32m&amp#27;[1m")^#$"&amp#27;[0m          &amp#27;[90m# step_definitions.JobOrder_Request.inputAnyTestInEveryFieldGeneralInformation(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="JOR_023 sampai JOR_072 #1" classname="JobOrder_Request" time="22.747">
+    <system-out><![CDATA[
+@JOR
+Scenario Outline: JOR_023 sampai JOR_072                                 &amp#27;[90m# features//JobOrder_Request.feature:28&amp#27;[0m
+15:54:12.746 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.6.3
+15:54:12.749 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=120 in cache (valid until 16:10:24 30/01/2024 WIB)
+15:54:12.750 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome120=120.0.6099.109 in cache (valid until 09:40:35 31/01/2024 WIB)
+15:54:12.750 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 120.0.6099.109 (resolved driver for Chrome 120)
+15:54:12.751 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 120.0.6099.109 found in cache
+15:54:12.751 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as /Users/fizkiarditiakusuma/.cache/selenium/chromedriver/mac-arm64/120.0.6099.109/chromedriver
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser already open website Recruitment NasTa Group&amp#27;[0m                &amp#27;[90m# step_definitions.login_manual.userAlreadyOpenWebsiteRecruitmentNasTaGroup()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser Click And Input Email or Username & Password with Valid Data&amp#27;[0m &amp#27;[90m# step_definitions.login_manual.userClickAndInputEmailOrUsernamePasswordWithValidData()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Click Sign In Button&amp#27;[0m                                          &amp#27;[90m# step_definitions.login_manual.userClickSignInButton()&amp#27;[0m
+User is on the landing page.
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser already on landing page&amp#27;[0m                                      &amp#27;[90m# step_definitions.login_manual.userAlreadyOnLandingPage()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Click menu Job Order&amp#27;[0m                                          &amp#27;[90m# step_definitions.JobOrder_Request.userClickMenuJobOrder()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser Add New Data Job Order Request&amp#27;[0m                               &amp#27;[90m# step_definitions.JobOrder_Request.userAddNewDataJobOrderRequest()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser Click every field in Reason of Request&amp#27;[0m                       &amp#27;[90m# step_definitions.JobOrder_Request.userClickEveryFieldInReasonOfRequest()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mInput any Test in every Field Reason of Request &amp#27;[0m&amp#27;[32m&amp#27;[1m"ABCD"&amp#27;[0m            &amp#27;[90m# step_definitions.JobOrder_Request.inputAnyTestInEveryFieldReasonOfRequest(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="JOR_023 sampai JOR_072 #2" classname="JobOrder_Request" time="22.929">
+    <system-out><![CDATA[
+@JOR
+Scenario Outline: JOR_023 sampai JOR_072                                 &amp#27;[90m# features//JobOrder_Request.feature:29&amp#27;[0m
+15:54:35.494 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.6.3
+15:54:35.497 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=120 in cache (valid until 16:10:24 30/01/2024 WIB)
+15:54:35.497 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome120=120.0.6099.109 in cache (valid until 09:40:35 31/01/2024 WIB)
+15:54:35.497 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 120.0.6099.109 (resolved driver for Chrome 120)
+15:54:35.502 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 120.0.6099.109 found in cache
+15:54:35.502 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as /Users/fizkiarditiakusuma/.cache/selenium/chromedriver/mac-arm64/120.0.6099.109/chromedriver
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser already open website Recruitment NasTa Group&amp#27;[0m                &amp#27;[90m# step_definitions.login_manual.userAlreadyOpenWebsiteRecruitmentNasTaGroup()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser Click And Input Email or Username & Password with Valid Data&amp#27;[0m &amp#27;[90m# step_definitions.login_manual.userClickAndInputEmailOrUsernamePasswordWithValidData()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Click Sign In Button&amp#27;[0m                                          &amp#27;[90m# step_definitions.login_manual.userClickSignInButton()&amp#27;[0m
+User is on the landing page.
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser already on landing page&amp#27;[0m                                      &amp#27;[90m# step_definitions.login_manual.userAlreadyOnLandingPage()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Click menu Job Order&amp#27;[0m                                          &amp#27;[90m# step_definitions.JobOrder_Request.userClickMenuJobOrder()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser Add New Data Job Order Request&amp#27;[0m                               &amp#27;[90m# step_definitions.JobOrder_Request.userAddNewDataJobOrderRequest()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser Click every field in Reason of Request&amp#27;[0m                       &amp#27;[90m# step_definitions.JobOrder_Request.userClickEveryFieldInReasonOfRequest()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mInput any Test in every Field Reason of Request &amp#27;[0m&amp#27;[32m&amp#27;[1m"1122"&amp#27;[0m            &amp#27;[90m# step_definitions.JobOrder_Request.inputAnyTestInEveryFieldReasonOfRequest(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="JOR_023 sampai JOR_072 #3" classname="JobOrder_Request" time="22.739">
+    <system-out><![CDATA[
+@JOR
+Scenario Outline: JOR_023 sampai JOR_072                                 &amp#27;[90m# features//JobOrder_Request.feature:30&amp#27;[0m
+15:54:58.422 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.6.3
+15:54:58.425 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=120 in cache (valid until 16:10:24 30/01/2024 WIB)
+15:54:58.425 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome120=120.0.6099.109 in cache (valid until 09:40:35 31/01/2024 WIB)
+15:54:58.425 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 120.0.6099.109 (resolved driver for Chrome 120)
+15:54:58.427 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 120.0.6099.109 found in cache
+15:54:58.427 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as /Users/fizkiarditiakusuma/.cache/selenium/chromedriver/mac-arm64/120.0.6099.109/chromedriver
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser already open website Recruitment NasTa Group&amp#27;[0m                &amp#27;[90m# step_definitions.login_manual.userAlreadyOpenWebsiteRecruitmentNasTaGroup()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser Click And Input Email or Username & Password with Valid Data&amp#27;[0m &amp#27;[90m# step_definitions.login_manual.userClickAndInputEmailOrUsernamePasswordWithValidData()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Click Sign In Button&amp#27;[0m                                          &amp#27;[90m# step_definitions.login_manual.userClickSignInButton()&amp#27;[0m
+User is on the landing page.
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser already on landing page&amp#27;[0m                                      &amp#27;[90m# step_definitions.login_manual.userAlreadyOnLandingPage()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Click menu Job Order&amp#27;[0m                                          &amp#27;[90m# step_definitions.JobOrder_Request.userClickMenuJobOrder()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser Add New Data Job Order Request&amp#27;[0m                               &amp#27;[90m# step_definitions.JobOrder_Request.userAddNewDataJobOrderRequest()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser Click every field in Reason of Request&amp#27;[0m                       &amp#27;[90m# step_definitions.JobOrder_Request.userClickEveryFieldInReasonOfRequest()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mInput any Test in every Field Reason of Request &amp#27;[0m&amp#27;[32m&amp#27;[1m")^#$"&amp#27;[0m            &amp#27;[90m# step_definitions.JobOrder_Request.inputAnyTestInEveryFieldReasonOfRequest(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="JOR_073 sampai JOR_081 #1" classname="JobOrder_Request" time="20.079">
+    <system-out><![CDATA[
+@JOR
+Scenario Outline: JOR_073 sampai JOR_081                                 &amp#27;[90m# features//JobOrder_Request.feature:39&amp#27;[0m
+15:55:21.162 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.6.3
+15:55:21.165 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=120 in cache (valid until 16:10:24 30/01/2024 WIB)
+15:55:21.165 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome120=120.0.6099.109 in cache (valid until 09:40:35 31/01/2024 WIB)
+15:55:21.165 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 120.0.6099.109 (resolved driver for Chrome 120)
+15:55:21.169 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 120.0.6099.109 found in cache
+15:55:21.170 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as /Users/fizkiarditiakusuma/.cache/selenium/chromedriver/mac-arm64/120.0.6099.109/chromedriver
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser already open website Recruitment NasTa Group&amp#27;[0m                &amp#27;[90m# step_definitions.login_manual.userAlreadyOpenWebsiteRecruitmentNasTaGroup()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser Click And Input Email or Username & Password with Valid Data&amp#27;[0m &amp#27;[90m# step_definitions.login_manual.userClickAndInputEmailOrUsernamePasswordWithValidData()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Click Sign In Button&amp#27;[0m                                          &amp#27;[90m# step_definitions.login_manual.userClickSignInButton()&amp#27;[0m
+User is on the landing page.
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser already on landing page&amp#27;[0m                                      &amp#27;[90m# step_definitions.login_manual.userAlreadyOnLandingPage()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Click menu Job Order&amp#27;[0m                                          &amp#27;[90m# step_definitions.JobOrder_Request.userClickMenuJobOrder()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser Add New Data Job Order Request&amp#27;[0m                               &amp#27;[90m# step_definitions.JobOrder_Request.userAddNewDataJobOrderRequest()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser Click every field in Skill Certification&amp#27;[0m                     &amp#27;[90m# step_definitions.JobOrder_Request.userClickEveryFieldInSkillCertification()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mInput any Test in every Field Skill Certification &amp#27;[0m&amp#27;[32m&amp#27;[1m"ABCD"&amp#27;[0m          &amp#27;[90m# step_definitions.JobOrder_Request.inputAnyTestInEveryFieldSkillCertification(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="JOR_073 sampai JOR_081 #2" classname="JobOrder_Request" time="27.585">
+    <system-out><![CDATA[
+@JOR
+Scenario Outline: JOR_073 sampai JOR_081                                 &amp#27;[90m# features//JobOrder_Request.feature:40&amp#27;[0m
+15:55:41.240 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.6.3
+15:55:41.243 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=120 in cache (valid until 16:10:24 30/01/2024 WIB)
+15:55:41.243 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome120=120.0.6099.109 in cache (valid until 09:40:35 31/01/2024 WIB)
+15:55:41.243 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 120.0.6099.109 (resolved driver for Chrome 120)
+15:55:41.245 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 120.0.6099.109 found in cache
+15:55:41.246 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as /Users/fizkiarditiakusuma/.cache/selenium/chromedriver/mac-arm64/120.0.6099.109/chromedriver
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser already open website Recruitment NasTa Group&amp#27;[0m                &amp#27;[90m# step_definitions.login_manual.userAlreadyOpenWebsiteRecruitmentNasTaGroup()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser Click And Input Email or Username & Password with Valid Data&amp#27;[0m &amp#27;[90m# step_definitions.login_manual.userClickAndInputEmailOrUsernamePasswordWithValidData()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Click Sign In Button&amp#27;[0m                                          &amp#27;[90m# step_definitions.login_manual.userClickSignInButton()&amp#27;[0m
+Element not found. User may not be on the landing page.
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser already on landing page&amp#27;[0m                                      &amp#27;[90m# step_definitions.login_manual.userAlreadyOnLandingPage()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Click menu Job Order&amp#27;[0m                                          &amp#27;[90m# step_definitions.JobOrder_Request.userClickMenuJobOrder()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser Add New Data Job Order Request&amp#27;[0m                               &amp#27;[90m# step_definitions.JobOrder_Request.userAddNewDataJobOrderRequest()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser Click every field in Skill Certification&amp#27;[0m                     &amp#27;[90m# step_definitions.JobOrder_Request.userClickEveryFieldInSkillCertification()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mInput any Test in every Field Skill Certification &amp#27;[0m&amp#27;[32m&amp#27;[1m"1122"&amp#27;[0m          &amp#27;[90m# step_definitions.JobOrder_Request.inputAnyTestInEveryFieldSkillCertification(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="JOR_073 sampai JOR_081 #3" classname="JobOrder_Request" time="31.036">
+    <system-out><![CDATA[
+@JOR
+Scenario Outline: JOR_073 sampai JOR_081                                 &amp#27;[90m# features//JobOrder_Request.feature:41&amp#27;[0m
+15:56:08.826 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.6.3
+15:56:08.830 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=120 in cache (valid until 16:10:24 30/01/2024 WIB)
+15:56:08.830 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome120=120.0.6099.109 in cache (valid until 09:40:35 31/01/2024 WIB)
+15:56:08.830 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 120.0.6099.109 (resolved driver for Chrome 120)
+15:56:08.834 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 120.0.6099.109 found in cache
+15:56:08.834 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as /Users/fizkiarditiakusuma/.cache/selenium/chromedriver/mac-arm64/120.0.6099.109/chromedriver
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser already open website Recruitment NasTa Group&amp#27;[0m                &amp#27;[90m# step_definitions.login_manual.userAlreadyOpenWebsiteRecruitmentNasTaGroup()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser Click And Input Email or Username & Password with Valid Data&amp#27;[0m &amp#27;[90m# step_definitions.login_manual.userClickAndInputEmailOrUsernamePasswordWithValidData()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Click Sign In Button&amp#27;[0m                                          &amp#27;[90m# step_definitions.login_manual.userClickSignInButton()&amp#27;[0m
+User is on the landing page.
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser already on landing page&amp#27;[0m                                      &amp#27;[90m# step_definitions.login_manual.userAlreadyOnLandingPage()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Click menu Job Order&amp#27;[0m                                          &amp#27;[90m# step_definitions.JobOrder_Request.userClickMenuJobOrder()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser Add New Data Job Order Request&amp#27;[0m                               &amp#27;[90m# step_definitions.JobOrder_Request.userAddNewDataJobOrderRequest()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser Click every field in Skill Certification&amp#27;[0m                     &amp#27;[90m# step_definitions.JobOrder_Request.userClickEveryFieldInSkillCertification()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mInput any Test in every Field Skill Certification &amp#27;[0m&amp#27;[32m&amp#27;[1m")^#$"&amp#27;[0m          &amp#27;[90m# step_definitions.JobOrder_Request.inputAnyTestInEveryFieldSkillCertification(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="JOR_082" classname="JobOrder_Request" time="35.933">
+    <system-out><![CDATA[
+@JOR
+Scenario: JOR_082                                                        &amp#27;[90m# features//JobOrder_Request.feature:43&amp#27;[0m
+15:56:39.863 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.6.3
+15:56:39.866 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=120 in cache (valid until 16:10:24 30/01/2024 WIB)
+15:56:39.866 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome120=120.0.6099.109 in cache (valid until 09:40:35 31/01/2024 WIB)
+15:56:39.866 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 120.0.6099.109 (resolved driver for Chrome 120)
+15:56:39.868 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 120.0.6099.109 found in cache
+15:56:39.868 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as /Users/fizkiarditiakusuma/.cache/selenium/chromedriver/mac-arm64/120.0.6099.109/chromedriver
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser already open website Recruitment NasTa Group&amp#27;[0m                &amp#27;[90m# step_definitions.login_manual.userAlreadyOpenWebsiteRecruitmentNasTaGroup()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser Click And Input Email or Username & Password with Valid Data&amp#27;[0m &amp#27;[90m# step_definitions.login_manual.userClickAndInputEmailOrUsernamePasswordWithValidData()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Click Sign In Button&amp#27;[0m                                          &amp#27;[90m# step_definitions.login_manual.userClickSignInButton()&amp#27;[0m
+User is on the landing page.
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser already on landing page&amp#27;[0m                                      &amp#27;[90m# step_definitions.login_manual.userAlreadyOnLandingPage()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Click menu Job Order&amp#27;[0m                                          &amp#27;[90m# step_definitions.JobOrder_Request.userClickMenuJobOrder()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser Add New Data Job Order Request&amp#27;[0m                               &amp#27;[90m# step_definitions.JobOrder_Request.userAddNewDataJobOrderRequest()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser Input All Field Form&amp#27;[0m                                         &amp#27;[90m# step_definitions.JobOrder_Request.userInputAllFieldForm()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="LG_001" classname="Login" time="6.711">
+    <system-out><![CDATA[
+@Login
+Scenario: LG_001                                          &amp#27;[90m# features//login.feature:8&amp#27;[0m
+15:57:15.799 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.6.3
+15:57:15.802 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=120 in cache (valid until 16:10:24 30/01/2024 WIB)
+15:57:15.803 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome120=120.0.6099.109 in cache (valid until 09:40:35 31/01/2024 WIB)
+15:57:15.803 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 120.0.6099.109 (resolved driver for Chrome 120)
+15:57:15.807 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 120.0.6099.109 found in cache
+15:57:15.812 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as /Users/fizkiarditiakusuma/.cache/selenium/chromedriver/mac-arm64/120.0.6099.109/chromedriver
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser already open website Recruitment NasTa Group&amp#27;[0m &amp#27;[90m# step_definitions.login_manual.userAlreadyOpenWebsiteRecruitmentNasTaGroup()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser Click Email or Username Field&amp#27;[0m                 &amp#27;[90m# step_definitions.login_manual.userClickEmailOrUsernameField()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="LG_002 LG_003 LG_004 #1" classname="Login" time="3.437">
+    <system-out><![CDATA[
+@Login
+Scenario Outline: LG_002 LG_003 LG_004                    &amp#27;[90m# features//login.feature:16&amp#27;[0m
+15:57:22.510 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.6.3
+15:57:22.513 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=120 in cache (valid until 16:10:24 30/01/2024 WIB)
+15:57:22.514 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome120=120.0.6099.109 in cache (valid until 09:40:35 31/01/2024 WIB)
+15:57:22.514 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 120.0.6099.109 (resolved driver for Chrome 120)
+15:57:22.515 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 120.0.6099.109 found in cache
+15:57:22.515 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as /Users/fizkiarditiakusuma/.cache/selenium/chromedriver/mac-arm64/120.0.6099.109/chromedriver
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser already open website Recruitment NasTa Group&amp#27;[0m &amp#27;[90m# step_definitions.login_manual.userAlreadyOpenWebsiteRecruitmentNasTaGroup()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser Click Email or Username Field&amp#27;[0m                 &amp#27;[90m# step_definitions.login_manual.userClickEmailOrUsernameField()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mInput any &amp#27;[0m&amp#27;[32m&amp#27;[1m"ABCD"&amp#27;[0m                                   &amp#27;[90m# step_definitions.login_manual.inputAny(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="LG_002 LG_003 LG_004 #2" classname="Login" time="4.556">
+    <system-out><![CDATA[
+@Login
+Scenario Outline: LG_002 LG_003 LG_004                    &amp#27;[90m# features//login.feature:17&amp#27;[0m
+15:57:25.947 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.6.3
+15:57:25.950 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=120 in cache (valid until 16:10:24 30/01/2024 WIB)
+15:57:25.950 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome120=120.0.6099.109 in cache (valid until 09:40:35 31/01/2024 WIB)
+15:57:25.950 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 120.0.6099.109 (resolved driver for Chrome 120)
+15:57:25.951 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 120.0.6099.109 found in cache
+15:57:25.951 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as /Users/fizkiarditiakusuma/.cache/selenium/chromedriver/mac-arm64/120.0.6099.109/chromedriver
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser already open website Recruitment NasTa Group&amp#27;[0m &amp#27;[90m# step_definitions.login_manual.userAlreadyOpenWebsiteRecruitmentNasTaGroup()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser Click Email or Username Field&amp#27;[0m                 &amp#27;[90m# step_definitions.login_manual.userClickEmailOrUsernameField()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mInput any &amp#27;[0m&amp#27;[32m&amp#27;[1m"1122"&amp#27;[0m                                   &amp#27;[90m# step_definitions.login_manual.inputAny(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="LG_002 LG_003 LG_004 #3" classname="Login" time="3.684">
+    <system-out><![CDATA[
+@Login
+Scenario Outline: LG_002 LG_003 LG_004                    &amp#27;[90m# features//login.feature:18&amp#27;[0m
+15:57:30.504 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.6.3
+15:57:30.507 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=120 in cache (valid until 16:10:24 30/01/2024 WIB)
+15:57:30.507 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome120=120.0.6099.109 in cache (valid until 09:40:35 31/01/2024 WIB)
+15:57:30.507 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 120.0.6099.109 (resolved driver for Chrome 120)
+15:57:30.508 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 120.0.6099.109 found in cache
+15:57:30.509 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as /Users/fizkiarditiakusuma/.cache/selenium/chromedriver/mac-arm64/120.0.6099.109/chromedriver
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser already open website Recruitment NasTa Group&amp#27;[0m &amp#27;[90m# step_definitions.login_manual.userAlreadyOpenWebsiteRecruitmentNasTaGroup()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser Click Email or Username Field&amp#27;[0m                 &amp#27;[90m# step_definitions.login_manual.userClickEmailOrUsernameField()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mInput any &amp#27;[0m&amp#27;[32m&amp#27;[1m")^#$"&amp#27;[0m                                   &amp#27;[90m# step_definitions.login_manual.inputAny(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="LG_005 LG_006 LG_007 LG_008 #1" classname="Login" time="4.053">
+    <system-out><![CDATA[
+@Login
+Scenario Outline: LG_005 LG_006 LG_007 LG_008             &amp#27;[90m# features//login.feature:26&amp#27;[0m
+15:57:34.187 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.6.3
+15:57:34.189 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=120 in cache (valid until 16:10:24 30/01/2024 WIB)
+15:57:34.189 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome120=120.0.6099.109 in cache (valid until 09:40:35 31/01/2024 WIB)
+15:57:34.189 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 120.0.6099.109 (resolved driver for Chrome 120)
+15:57:34.190 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 120.0.6099.109 found in cache
+15:57:34.190 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as /Users/fizkiarditiakusuma/.cache/selenium/chromedriver/mac-arm64/120.0.6099.109/chromedriver
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser already open website Recruitment NasTa Group&amp#27;[0m &amp#27;[90m# step_definitions.login_manual.userAlreadyOpenWebsiteRecruitmentNasTaGroup()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser Click Password Field&amp#27;[0m                          &amp#27;[90m# step_definitions.login_manual.userClickPasswordField()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mInput any &amp#27;[0m&amp#27;[32m&amp#27;[1m"ABCD"&amp#27;[0m                                   &amp#27;[90m# step_definitions.login_manual.inputAny(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="LG_005 LG_006 LG_007 LG_008 #2" classname="Login" time="8.876">
+    <system-out><![CDATA[
+@Login
+Scenario Outline: LG_005 LG_006 LG_007 LG_008             &amp#27;[90m# features//login.feature:27&amp#27;[0m
+15:57:38.242 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.6.3
+15:57:38.245 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=120 in cache (valid until 16:10:24 30/01/2024 WIB)
+15:57:38.245 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome120=120.0.6099.109 in cache (valid until 09:40:35 31/01/2024 WIB)
+15:57:38.245 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 120.0.6099.109 (resolved driver for Chrome 120)
+15:57:38.246 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 120.0.6099.109 found in cache
+15:57:38.247 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as /Users/fizkiarditiakusuma/.cache/selenium/chromedriver/mac-arm64/120.0.6099.109/chromedriver
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser already open website Recruitment NasTa Group&amp#27;[0m &amp#27;[90m# step_definitions.login_manual.userAlreadyOpenWebsiteRecruitmentNasTaGroup()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser Click Password Field&amp#27;[0m                          &amp#27;[90m# step_definitions.login_manual.userClickPasswordField()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mInput any &amp#27;[0m&amp#27;[32m&amp#27;[1m"1122"&amp#27;[0m                                   &amp#27;[90m# step_definitions.login_manual.inputAny(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="LG_005 LG_006 LG_007 LG_008 #3" classname="Login" time="20.06">
+    <system-out><![CDATA[
+@Login
+Scenario Outline: LG_005 LG_006 LG_007 LG_008             &amp#27;[90m# features//login.feature:28&amp#27;[0m
+15:57:47.116 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.6.3
+15:57:47.118 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=120 in cache (valid until 16:10:24 30/01/2024 WIB)
+15:57:47.118 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome120=120.0.6099.109 in cache (valid until 09:40:35 31/01/2024 WIB)
+15:57:47.119 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 120.0.6099.109 (resolved driver for Chrome 120)
+15:57:47.121 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 120.0.6099.109 found in cache
+15:57:47.121 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as /Users/fizkiarditiakusuma/.cache/selenium/chromedriver/mac-arm64/120.0.6099.109/chromedriver
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser already open website Recruitment NasTa Group&amp#27;[0m &amp#27;[90m# step_definitions.login_manual.userAlreadyOpenWebsiteRecruitmentNasTaGroup()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser Click Password Field&amp#27;[0m                          &amp#27;[90m# step_definitions.login_manual.userClickPasswordField()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mInput any &amp#27;[0m&amp#27;[32m&amp#27;[1m")^#$"&amp#27;[0m                                   &amp#27;[90m# step_definitions.login_manual.inputAny(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="LG_009" classname="Login" time="12.017">
+    <system-out><![CDATA[
+@Login
+Scenario: LG_009                                                         &amp#27;[90m# features//login.feature:31&amp#27;[0m
+15:58:07.177 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.6.3
+15:58:07.182 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=120 in cache (valid until 16:10:24 30/01/2024 WIB)
+15:58:07.182 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome120=120.0.6099.109 in cache (valid until 09:40:35 31/01/2024 WIB)
+15:58:07.182 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 120.0.6099.109 (resolved driver for Chrome 120)
+15:58:07.183 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 120.0.6099.109 found in cache
+15:58:07.183 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as /Users/fizkiarditiakusuma/.cache/selenium/chromedriver/mac-arm64/120.0.6099.109/chromedriver
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser already open website Recruitment NasTa Group&amp#27;[0m                &amp#27;[90m# step_definitions.login_manual.userAlreadyOpenWebsiteRecruitmentNasTaGroup()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser Click And Input Email or Username & Password with Valid Data&amp#27;[0m &amp#27;[90m# step_definitions.login_manual.userClickAndInputEmailOrUsernamePasswordWithValidData()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Click Sign In Button&amp#27;[0m                                          &amp#27;[90m# step_definitions.login_manual.userClickSignInButton()&amp#27;[0m
+User is on the landing page.
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser already on landing page&amp#27;[0m                                      &amp#27;[90m# step_definitions.login_manual.userAlreadyOnLandingPage()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="LG_010, LG_011, LG_012" classname="Login" time="9.307">
+    <system-out><![CDATA[
+@Login
+Scenario: LG_010, LG_011, LG_012                               &amp#27;[90m# features//login.feature:36&amp#27;[0m
+15:58:19.193 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.6.3
+15:58:19.196 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=120 in cache (valid until 16:10:24 30/01/2024 WIB)
+15:58:19.197 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome120=120.0.6099.109 in cache (valid until 09:40:35 31/01/2024 WIB)
+15:58:19.197 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 120.0.6099.109 (resolved driver for Chrome 120)
+15:58:19.200 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 120.0.6099.109 found in cache
+15:58:19.200 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as /Users/fizkiarditiakusuma/.cache/selenium/chromedriver/mac-arm64/120.0.6099.109/chromedriver
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser already open website Recruitment NasTa Group&amp#27;[0m      &amp#27;[90m# step_definitions.login_manual.userAlreadyOpenWebsiteRecruitmentNasTaGroup()&amp#27;[0m
+Element not found. User may not be on the landing page.
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser Click And Input Email & Password with Invalid Data&amp#27;[0m &amp#27;[90m# step_definitions.login_manual.userClickAndInputEmailPasswordWithInvalidData()&amp#27;[0m
+]]></system-out>
+  </testcase>
+</testsuite>
