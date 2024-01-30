@@ -90,7 +90,7 @@ public class login {
 
 
     @Then("User already on landing page")
-    public void userAlreadyOnLandingPage() {
+    public void userAlreadyOnLandingPage() throws InterruptedException {
 //        dasar code
 //        WebElement landingPage = webDriver.findElement(By.cssSelector(".MuiToolbar-root"));
 //        landingPage.isDisplayed();
@@ -109,6 +109,7 @@ public class login {
             System.out.println("Element not found. User may not be on the landing page.");
 
         }
+        Thread.sleep(2000);
     }
 
     @Then("User Click And Input Email & Password with Invalid Data")
