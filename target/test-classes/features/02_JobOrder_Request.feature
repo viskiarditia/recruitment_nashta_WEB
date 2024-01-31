@@ -46,125 +46,57 @@ Feature: JobOrder_Request
     When User Input All Field Form
 
 
-#  Scenario: JOR_083
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Input All Field Form without Scale Of Needs Field
-#
-#  Scenario: JOR_084
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Assigment Location Field Position Level
-#    Then Input any alphabet (e.g: Abcd)
-#
-#  Scenario: JOR_085
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Assigment Location Field Position Level
-#    Then Input any numeric
-#
-#  Scenario: JOR_086
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Assigment Location Field Position Level
-#    Then Input any special character
-#
-#  Scenario: JOR_087
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Assigment Location Field Start Date
-#    Then Input any alphabet (e.g: Abcd)
-#
-#  Scenario: JOR_088
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Assigment Location Field Start Date
-#    Then Input any numeric
-#
-#  Scenario: JOR_089
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Assigment Location Field Start Date
-#    Then Input any special character
-#
-#  Scenario: JOR_090
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Assigment Location Field End Date
-#    Then Input any alphabet (e.g: Abcd)
-#
-#  Scenario: JOR_091
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Assigment Location Field Start Date
-#    Then Input any numeric
-#
-#  Scenario: JOR_092
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    When User Click Assigment Location Field Start Date
-#    Then Input any special character
-#
-#  Scenario: JOR_093
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    Then the user fills in each required field
-#
-#  Scenario: JOR_094
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    Then the user fills in each required field without Scales of Needs
-#
-#  Scenario: JOR_095
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    Then User Click button Column Actions
-#    And Choise Sort by Status Ascending
-#
-#  Scenario: JOR_096
-#    Given User already open webstie Recuitment NasTa Group
-#    When User already logged in
-#    And User Click menu Job Order
-#    Then User Add New Data Job Order Request
-#    Then User Click button Column Actions
-#    And Choise Sort by Status Descending
-#
-#  Scenario: JOR_097
-#    Given User already open webstie Recuitment NasTa Group
+  Scenario: JOR_083
+    And User Click menu Job Order
+    Then User Add New Data Job Order Request
+    When User Input All Field Form without Scale Of Needs Field
+
+  Scenario Outline: JOR_084 sampai JOR_104
+    And User Click menu Job Order
+    Then User click button Filter in Job Order Request
+    Then Input any Test in Company Field "<Data Test>"
+     Examples:
+      | Data Test |
+      | ABCD      |
+      | 1122      |
+      | )^#$      |
+
+  Scenario: Valid Filter
+    And User Click menu Job Order
+    Then User click button Filter in Job Order Request
+    And Input Valid Data button Filter all Field
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+#  Scenario: JOR_0
+#    Given User already open website recruitment NasTa Group
 #    When User already logged in
 #    And User Click menu Job Order
 #    Then User Add New Data Job Order Request
 #    Then User Click button Column Actions
 #    And Choise Sort by Clear Sort
 #
-#  Scenario: JOR_098
-#    Given User already open webstie Recuitment NasTa Group
+#  Scenario: JOR_0
+#    Given User already open website recruitment NasTa Group
 #    When User already logged in
 #    And User Click menu Job Order
 #    Then User Add New Data Job Order Request
@@ -172,7 +104,7 @@ Feature: JobOrder_Request
 #    And Choise Clear Filter
 #
 #  Scenario: JOR_099
-#    Given User already open webstie Recuitment NasTa Group
+#    Given User already open website recruitment NasTa Group
 #    When User already logged in
 #    And User Click menu Job Order
 #    Then User Add New Data Job Order Request
@@ -180,7 +112,7 @@ Feature: JobOrder_Request
 #    And Choise Filter by Status
 #
 #  Scenario: JOR_100
-#    Given User already open webstie Recuitment NasTa Group
+#    Given User already open website recruitment NasTa Group
 #    When User already logged in
 #    And User Click menu Job Order
 #    Then User Add New Data Job Order Request
@@ -188,7 +120,7 @@ Feature: JobOrder_Request
 #    And Choise Filter by Status
 #
 #  Scenario: JOR_101
-#    Given User already open webstie Recuitment NasTa Group
+#    Given User already open website recruitment NasTa Group
 #    When User already logged in
 #    And User Click menu Job Order
 #    Then User Add New Data Job Order Request
@@ -196,7 +128,7 @@ Feature: JobOrder_Request
 #    And Choise Status Approval
 #
 #  Scenario: JOR_102
-#    Given User already open webstie Recuitment NasTa Group
+#    Given User already open website recruitment NasTa Group
 #    When User already logged in
 #    And User Click menu Job Order
 #    Then User Add New Data Job Order Request
@@ -204,7 +136,7 @@ Feature: JobOrder_Request
 #    And Choise Delete
 #
 #  Scenario: JOR_103
-#    Given User already open webstie Recuitment NasTa Group
+#    Given User already open website recruitment NasTa Group
 #    When User already logged in
 #    And User Click menu Job Order
 #    Then User Add New Data Job Order Request
@@ -212,7 +144,7 @@ Feature: JobOrder_Request
 #    And Choise number "5"
 #
 #  Scenario: JOR_104
-#    Given User already open webstie Recuitment NasTa Group
+#    Given User already open website recruitment NasTa Group
 #    When User already logged in
 #    And User Click menu Job Order
 #    Then User Add New Data Job Order Request
@@ -220,7 +152,7 @@ Feature: JobOrder_Request
 #    And Choise number "10"
 #
 #  Scenario: JOR_105
-#    Given User already open webstie Recuitment NasTa Group
+#    Given User already open website recruitment NasTa Group
 #    When User already logged in
 #    And User Click menu Job Order
 #    Then User Add New Data Job Order Request
@@ -228,7 +160,7 @@ Feature: JobOrder_Request
 #    And Choise number "15"
 #
 #  Scenario: JOR_106
-#    Given User already open webstie Recuitment NasTa Group
+#    Given User already open website recruitment NasTa Group
 #    When User already logged in
 #    And User Click menu Job Order
 #    Then User Add New Data Job Order Request
@@ -236,7 +168,7 @@ Feature: JobOrder_Request
 #    And Choise number "20"
 #
 #  Scenario: JOR_107
-#    Given User already open webstie Recuitment NasTa Group
+#    Given User already open website recruitment NasTa Group
 #    When User already logged in
 #    And User Click menu Job Order
 #    Then User Add New Data Job Order Request
@@ -244,7 +176,7 @@ Feature: JobOrder_Request
 #    And Choise number "25"
 #
 #  Scenario: JOR_108
-#    Given User already open webstie Recuitment NasTa Group
+#    Given User already open website recruitment NasTa Group
 #    When User already logged in
 #    And User Click menu Job Order
 #    Then User Add New Data Job Order Request
@@ -252,7 +184,7 @@ Feature: JobOrder_Request
 #    And Choise number "30"
 #
 #  Scenario: JOR_109
-#    Given User already open webstie Recuitment NasTa Group
+#    Given User already open website recruitment NasTa Group
 #    When User already logged in
 #    And User Click menu Job Order
 #    Then User Add New Data Job Order Request
@@ -260,7 +192,7 @@ Feature: JobOrder_Request
 #    And Choise number "50"
 #
 #  Scenario: JOR_110
-#    Given User already open webstie Recuitment NasTa Group
+#    Given User already open website recruitment NasTa Group
 #    When User already logged in
 #    And User Click menu Job Order
 #    Then User Add New Data Job Order Request
